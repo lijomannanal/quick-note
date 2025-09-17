@@ -39,6 +39,7 @@ export default function AppTitle({ color }: Props) {
           sx={{
             color,
             letterSpacing: "0.05em",
+            fontWeight: 600,
           }}
         >
           QuickNote

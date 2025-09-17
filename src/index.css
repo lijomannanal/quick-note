@@ -36,9 +36,13 @@ body,
   min-height: 100vh;
   width: 100vw;
   flex-direction: column;
+  overflow-x: hidden;
+}
+body {
+  padding: 0 !important;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .root__layout {
     flex-direction: row;
   }
@@ -81,8 +85,7 @@ button:focus-visible {
   }
 
   .main-section {
-    padding: 1rem;
-    margin: 1rem;
+    padding: 2rem;
     width: 100%;
     color: #0b0e14;
   }

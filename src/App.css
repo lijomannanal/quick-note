@@ -1,3 +1,7 @@
 .app-bar {
   margin-left: 240px;
 }
+.MuiInputBase-input::placeholder {
+  color: blue;
+  opacity: 1;
+}

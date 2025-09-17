@@ -12,7 +12,7 @@ export default function AppNavBar() {
     setOpen(newOpen);
   };
   return (
-    <Box sx={{ display: { xs: "auto", md: "none" } }}>
+    <Box sx={{ display: { xs: "auto", laptop: "none" } }}>
       <AppBar
         sx={{
           backgroundColor: "background.default",
@@ -30,7 +30,7 @@ export default function AppNavBar() {
               justifyContent: "space-between",
             }}
           >
-            <AppTitle color="#000000" />
+            <AppTitle color="text.title" />
             <MenuButton
               sx={{ paddingTop: "1rem" }}
               aria-label="menu"
