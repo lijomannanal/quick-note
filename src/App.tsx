@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./components/Home";
 import { DBConfig } from "./config/DBConfig";
@@ -13,7 +13,7 @@ function App() {
     <ThemeContextProvider>
       <Router>
         <Routes>
-          <Route path="/" element={<Layout />}>
+          <Route path={`/`} element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="archive" element={<Archive />} />
           </Route>

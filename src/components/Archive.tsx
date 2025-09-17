@@ -7,6 +7,7 @@ import type { INote } from "../models/Note";
 import Loader from "./Loader";
 import EmptyNote from "./EmptyNote";
 import NoteCard from "./NoteCard";
+import { basePath } from "../../basepath";
 
 export default function Archive() {
   const [loading, setLoading] = useState(true);
@@ -76,13 +77,13 @@ export default function Archive() {
             searchText ? (
               <EmptyNote
                 caption={`Couldn't find any archives`}
-                imagePath={`/note-not-found.svg`}
+                imagePath={`/${basePath}/note-not-found.svg`}
                 altText={`No search results`}
               />
             ) : (
               <EmptyNote
                 caption={`You don't have any archives`}
-                imagePath={`/empty-archive-illustration.svg`}
+                imagePath={`/${basePath}/empty-archive-illustration.svg`}
                 altText={`No archives illustration`}
               />
             )

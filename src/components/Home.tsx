@@ -24,6 +24,7 @@ import DeleteDialog from "./DeleteDialog";
 import SnackbarAlert from "./SnackbarAlert";
 import { SnackbarVariants } from "../models/common";
 import PageTitle from "./PageTitle";
+import { basePath } from "../../basepath";
 
 export default function Home() {
   const [tabIndex, setTabIndex] = useState(0);
@@ -208,13 +209,13 @@ export default function Home() {
             searchText ? (
               <EmptyNote
                 caption={`Couldn't found any notes`}
-                imagePath={`/note-not-found.svg`}
+                imagePath={`/${basePath}/note-not-found.svg`}
                 altText={`No search results illustration`}
               />
             ) : (
               <EmptyNote
                 caption={`You don't have any notes`}
-                imagePath={`/empty-note-illustration.svg`}
+                imagePath={`/${basePath}/empty-note-illustration.svg`}
                 altText={`No notes illustration`}
               />
             )

@@ -24,12 +24,12 @@ export const TabColors = {
 export const MenuItems = [
   {
     title: "Notes",
-    path: "/",
+    path: `/`,
     icon: NoteIcon,
   },
   {
     title: "Archive",
-    path: "/archive",
+    path: `/archive`,
     icon: ArchiveIcon,
   },
 ];

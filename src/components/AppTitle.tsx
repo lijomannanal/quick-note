@@ -1,4 +1,5 @@
 import { Box, Link, Typography } from "@mui/material";
+import { basePath } from "../../basepath";
 type Props = {
   color: string;
 };
@@ -31,7 +32,7 @@ export default function AppTitle({ color }: Props) {
             height: "2rem",
           }}
           alt="Logo"
-          src="note.svg"
+          src={`/${basePath}/note.svg`}
         />
 
         <Typography
